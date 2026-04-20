@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zeenat Lawal — Software Developer specializing in React, Next.js, TypeScript, and React Native.">
+  <title>Zeenat Lawal — Software Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="shortcut icon" href="../Portfolio/images/Zeenat.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== CURSOR DOT ========== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">ZL<span class="logo-dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#stack" class="nav-link">Stack</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#stack" class="mob-link">Stack</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-hi">Hi there, I'm</p>
+        <h1 class="hero-name">
+          Zeenat<br>
+          <span class="hero-name-accent">Lawal</span>
+          <span class="hero-accent-dot"></span>
+        </h1>
+        <p class="hero-role">Software Developer &nbsp;&mdash;&nbsp; React &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; React Native</p>
+        <p class="hero-tagline">
+          I build <em>scalable</em>, <em>performant</em> web &amp; mobile experiences<br class="br-desk">
+          that are fast, accessible, and visually compelling.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="https://drive.google.com/file/d/16q2KArHhO0YUz1d34NNIfIL3YA7gCKAY/view"
+             target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Resume &nbsp;<i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/ZeenatLawal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/zeenatlawal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://medium.com/@zeenatlawal82" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium"></i></a>
+        </div>
+      </div>
+      <div class="hero-img-col">
+        <div class="hero-img-ring">
+          <img src="../Portfolio/images/Zeenat.jpg" alt="Zeenat Lawal" class="hero-img">
+        </div>
+        <div class="hero-floating-badge">
+          <i class="fas fa-code"></i>
+          <span>3+ years<br>experience</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about">
+      <span class="scroll-text">scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-num">01</span>
+        <div>
+          <p class="sec-eyebrow">Get to know me</p>
+          <h2 class="sec-title">About Me</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col reveal">
+          <div class="about-img-wrap">
+            <img src="../Portfolio/images/Zeenat.jpg" alt="Zeenat Lawal">
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>3+</strong>
+              <span>Years<br>Experience</span>
+            </div>
+            <div class="stat">
+              <strong>200+</strong>
+              <span>Devs<br>Mentored</span>
+            </div>
+            <div class="stat">
+              <strong>MSc</strong>
+              <span>Computing<br>SE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-body reveal">
+          <h3 class="about-heading">
+            I build things for the web <em>&amp; mobile.</em>
+          </h3>
+          <p>
+            I'm a dedicated frontend developer passionate about creating exceptional user experiences
+            through clean, efficient code. With expertise in modern JavaScript frameworks and a strong
+            foundation in computer science, I bring both technical depth and creative problem-solving
+            to every project.
+          </p>
+          <p>
+            I thrive in collaborative environments while continuously learning new technologies. I also
+            have a passion for mentoring — having guided 200+ developers in coding best practices and
+            helped them successfully transition into tech careers.
+          </p>
+          <a href="https://drive.google.com/file/d/16q2KArHhO0YUz1d34NNIfIL3YA7gCKAY/view"
+             target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Get my Resume &nbsp;<i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STACK ========== -->
+  <section class="section section--dark" id="stack">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-num">02</span>
+        <div>
+          <p class="sec-eyebrow">What I work with</p>
+          <h2 class="sec-title">My Stack</h2>
+        </div>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-card reveal">
+          <div class="stack-card-top">
+            <span class="stack-icon-dot" style="--dot:#22b07d"></span>
+            <h4>Languages</h4>
+          </div>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Ruby</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal">
+          <div class="stack-card-top">
+            <span class="stack-icon-dot" style="--dot:#376aed"></span>
+            <h4>Frameworks &amp; Libraries</h4>
+          </div>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Expo</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Material-UI</span>
+            <span class="tag">Express</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal">
+          <div class="stack-card-top">
+            <span class="stack-icon-dot" style="--dot:#f19d2a"></span>
+            <h4>Tools &amp; Platforms</h4>
+          </div>
+          <div class="tags">
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Jest</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal">
+          <div class="stack-card-top">
+            <span class="stack-icon-dot" style="--dot:#db4747"></span>
+            <h4>Core Strengths</h4>
+          </div>
+          <div class="tags">
+            <span class="tag">Performance Optimization</span>
+            <span class="tag">Code Quality &amp; Testing</span>
+            <span class="tag">Team Collaboration</span>
+            <span class="tag">Mentoring</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-num">03</span>
+        <div>
+          <p class="sec-eyebrow">My professional journey</p>
+          <h2 class="sec-title">Experience</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-period">July 2025 — Present</span>
+            <h3 class="tl-role">Software Developer</h3>
+            <a href="https://andrometa.io" target="_blank" rel="noopener noreferrer" class="tl-company">ANDROMETA ↗</a>
+            <p class="tl-desc">
+              Leading mobile app UI development using React Native, implementing onboarding and conversational flows.
+              Developing and maintaining core frontend features across the main website and dashboard, leading UI redesign
+              and component standardisation. Collaborating with backend engineers to integrate wallet connections,
+              referral flows, and authentication states.
+            </p>
+            <div class="tags">
+              <span class="tag tag--red">React Native</span>
+              <span class="tag tag--red">React</span>
+              <span class="tag tag--red">TypeScript</span>
+              <span class="tag tag--red">UI Redesign</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-period">May 2024 — June 2025</span>
+            <h3 class="tl-role">Frontend Software Developer</h3>
+            <a href="https://spaarkd.com" target="_blank" rel="noopener noreferrer" class="tl-company">SPAARKD ↗</a>
+            <p class="tl-desc">
+              Developing and optimizing scalable applications using Next.js, React, and Tailwind CSS.
+              Implementing real-time data features with Supabase and building dynamic UIs that enhance
+              user engagement and platform usability.
+            </p>
+            <div class="tags">
+              <span class="tag tag--red">Next.js</span>
+              <span class="tag tag--red">React</span>
+              <span class="tag tag--red">Tailwind CSS</span>
+              <span class="tag tag--red">Supabase</span>
+              <span class="tag tag--red">TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-period">Mar 2022 — Mar 2024</span>
+            <h3 class="tl-role">Frontend Software Developer</h3>
+            <a href="https://www.amy.app/" target="_blank" rel="noopener noreferrer" class="tl-company">AMY ↗</a>
+            <p class="tl-desc">
+              Designed and implemented user-centric interfaces using React and Material-UI, resulting in 30% increased
+              team productivity. Achieved 25% reduction in page load times through performance optimization and
+              maintained 50% fewer bugs through comprehensive Jest testing.
+            </p>
+            <div class="tags">
+              <span class="tag tag--red">React</span>
+              <span class="tag tag--red">Material-UI</span>
+              <span class="tag tag--red">Jest</span>
+              <span class="tag tag--red">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-period">Feb 2022 — June 2024</span>
+            <h3 class="tl-role">Web Development Mentor</h3>
+            <a href="https://lighthouselabs.ca" target="_blank" rel="noopener noreferrer" class="tl-company">LIGHTHOUSE LABS ↗</a>
+            <p class="tl-desc">
+              Mentored 200+ students in modern web development technologies and best practices.
+              Provided technical guidance and code reviews, resulting in 70% improvement in student code quality
+              and successful career transitions into tech.
+            </p>
+            <div class="tags">
+              <span class="tag tag--red">Mentoring</span>
+              <span class="tag tag--red">Code Review</span>
+              <span class="tag tag--red">Technical Training</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-period">Sep 2021 — Mar 2022</span>
+            <h3 class="tl-role">Technical Support Engineer</h3>
+            <a href="https://microverse.org" target="_blank" rel="noopener noreferrer" class="tl-company">MICROVERSE ↗</a>
+            <p class="tl-desc">
+              Conducted comprehensive source code and UI reviews, contributing to 30% improvement in overall product
+              stability. Optimised students' learning processes, leading to a 45% improvement in coding skills
+              and project outcomes.
+            </p>
+            <div class="tags">
+              <span class="tag tag--red">Code Review</span>
+              <span class="tag tag--red">GitHub</span>
+              <span class="tag tag--red">Quality Assurance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section section--dark" id="projects">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-num">04</span>
+        <div>
+          <p class="sec-eyebrow">Things I've built</p>
+          <h2 class="sec-title">Projects</h2>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <i class="fas fa-folder-open project-folder"></i>
+            <a href="https://github.com/mnnt-io/YapChat" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-gh"><i class="fab fa-github"></i></a>
+          </div>
+          <h3 class="project-name">YapChat</h3>
+          <p class="project-desc">
+            An AI-powered social bonding app built with Expo &amp; React Native. Features AI persona chat,
+            Discord integration, real-time messaging, and full user identity customisation with personality profiles.
+          </p>
+          <div class="tags project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Expo</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <i class="fas fa-folder-open project-folder"></i>
+            <a href="https://github.com/ZeenatLawal/SickleMe-Care" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-gh"><i class="fab fa-github"></i></a>
+          </div>
+          <h3 class="project-name">SickleMeCare</h3>
+          <p class="project-desc">
+            A mobile health management app for sickle cell disease patients. Features pain tracking,
+            mood logging, medication reminders, hydration monitoring, risk calculation, and educational resources.
+          </p>
+          <div class="tags project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Expo</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-num">05</span>
+        <div>
+          <p class="sec-eyebrow">Academic background</p>
+          <h2 class="sec-title">Education</h2>
+        </div>
+      </div>
+
+      <div class="edu-list">
+        <div class="edu-item reveal">
+          <div class="edu-period">Sep 2024 – Sep 2025</div>
+          <div class="edu-body">
+            <h3>M.Sc, Computing (Software Engineering)</h3>
+            <p class="edu-place">University of Northampton</p>
+            <p>Advanced coursework in software engineering, database systems, mobile app development, and emerging technologies.</p>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-period">Mar 2021 – Dec 2021</div>
+          <div class="edu-body">
+            <h3>Full Stack Web Development Program</h3>
+            <p class="edu-place"><a href="https://microverse.org" target="_blank" rel="noopener noreferrer">Microverse</a></p>
+            <p>Comprehensive training in JavaScript, React, Ruby on Rails, and full-stack development practices.</p>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-period">Dec 2015 – Nov 2019</div>
+          <div class="edu-body">
+            <h3>B.Sc, Computer Science</h3>
+            <p class="edu-place">Usmanu Danfodiyo University Sokoto</p>
+            <p>Foundation in computer science fundamentals, algorithms, and data structures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-num">06</span>
+        <div>
+          <p class="sec-eyebrow">Get in touch</p>
+          <h2 class="sec-title">Contact</h2>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h3 class="contact-heading">Let's work<br><em>together.</em></h3>
+          <p>Whether you have a project in mind, a job opportunity, or just want to say hi — my inbox is always open.</p>
+          <div class="contact-socials">
+            <a href="https://github.com/ZeenatLawal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/zeenatlawal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://medium.com/@zeenatlawal82" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium"></i></a>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/mayabzdz" method="post" class="contact-form reveal">
+          <div class="form-field">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-field">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Send Message &nbsp;<i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Zeenat Lawal. Built with care.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/ZeenatLawal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/zeenatlawal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://medium.com/@zeenatlawal82" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
