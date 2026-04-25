@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NB9S4CLRJ6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-NB9S4CLRJ6");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Zeenat Lawal — Software Developer specializing in React, Next.js, TypeScript, and React Native."
+      content="Zeenat Lawal | Software Developer specializing in React, Next.js, TypeScript, and React Native."
     />
-    <title>Zeenat Lawal — Software Developer</title>
+    <title>Zeenat Lawal | Software Developer</title>
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zeenatlawal.github.io/" />
+    <meta property="og:title" content="Zeenat Lawal | Software Developer" />
+    <meta property="og:description" content="Software Developer specializing in React, Next.js, TypeScript, and React Native." />
+    <meta property="og:image" content="https://zeenatlawal.github.io/images/Zeenat.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zeenat Lawal | Software Developer" />
+    <meta name="twitter:description" content="Software Developer specializing in React, Next.js, TypeScript, and React Native." />
+    <meta name="twitter:image" content="https://zeenatlawal.github.io/images/Zeenat.jpg" />
+    <meta name="theme-color" content="#1b1b1e" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,11 +48,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <link
-      rel="shortcut icon"
-      href="../Portfolio/images/Zeenat.jpg"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="images/Zeenat.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -35,13 +56,14 @@
     <div class="cursor-dot" id="cursorDot"></div>
 
     <!-- ========== NAVIGATION ========== -->
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Main navigation">
       <a href="#home" class="nav-logo">ZL<span class="logo-dot">.</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#stack" class="nav-link">Stack</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <button
@@ -55,34 +77,38 @@
     </nav>
 
     <!-- mobile drawer -->
-    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Mobile navigation"
+    >
       <ul>
         <li><a href="#about" class="mob-link">About</a></li>
         <li><a href="#stack" class="mob-link">Stack</a></li>
         <li><a href="#experience" class="mob-link">Experience</a></li>
         <li><a href="#projects" class="mob-link">Projects</a></li>
+        <li><a href="#education" class="mob-link">Education</a></li>
         <li><a href="#contact" class="mob-link">Contact</a></li>
       </ul>
     </div>
 
     <!-- ========== HERO ========== -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" aria-label="Introduction">
       <div class="hero-inner">
         <div class="hero-text">
           <p class="hero-hi">Hi there, I'm</p>
           <h1 class="hero-name">
             Zeenat<br />
             <span class="hero-name-accent">Lawal</span>
-            <span class="hero-accent-dot"></span>
+            <span class="hero-accent-dot" aria-hidden="true"></span>
           </h1>
-          <p class="hero-role">
-            Software Developer &nbsp;&mdash;&nbsp; React &nbsp;·&nbsp; Next.js
-            &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; React Native
-          </p>
+          <p class="hero-role">Software Developer</p>
           <p class="hero-tagline">
-            I build <em>scalable</em>, <em>performant</em> web &amp; mobile
-            experiences<br class="br-desk" />
-            that are fast, accessible, and visually compelling.
+            Turning ideas into <em>fast</em>, <em>accessible</em> web &amp;
+            mobile<br class="br-desk" />
+            products, from first commit to production.
           </p>
           <div class="hero-btns">
             <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -92,7 +118,11 @@
               rel="noopener noreferrer"
               class="btn btn-outline"
             >
-              Resume &nbsp;<i class="fas fa-external-link-alt"></i>
+              Resume &nbsp;<i
+                class="fas fa-external-link-alt"
+                aria-hidden="true"
+              ></i>
+              <span class="sr-only">(opens in new tab)</span>
             </a>
           </div>
           <div class="hero-socials">
@@ -120,14 +150,10 @@
           </div>
         </div>
       </div>
-      <a href="#about" class="scroll-hint" aria-label="Scroll to about">
-        <span class="scroll-text">scroll</span>
-        <div class="scroll-line"></div>
-      </a>
     </section>
 
     <!-- ========== ABOUT ========== -->
-    <section class="section" id="about">
+    <section class="section" id="about" aria-label="About Me">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">01</span>
@@ -140,9 +166,9 @@
         <div class="about-grid">
           <div class="about-image-col reveal">
             <div class="about-img-wrap">
-              <img src="../Portfolio/images/Zeenat.jpg" alt="Zeenat Lawal" />
+              <img src="images/Zeenat.jpg" alt="Zeenat Lawal" />
             </div>
-            <div class="about-stats">
+            <!-- <div class="about-stats">
               <div class="stat">
                 <strong>3+</strong>
                 <span>Years<br />Experience</span>
@@ -155,7 +181,7 @@
                 <strong>MSc</strong>
                 <span>Computing<br />SE</span>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="about-body reveal">
@@ -171,7 +197,7 @@
             </p>
             <p>
               I thrive in collaborative environments while continuously learning
-              new technologies. I also have a passion for mentoring — having
+              new technologies. I also have a passion for mentoring, having
               guided 200+ developers in coding best practices and helped them
               successfully transition into tech careers.
             </p>
@@ -189,7 +215,7 @@
     </section>
 
     <!-- ========== STACK ========== -->
-    <section class="section section--dark" id="stack">
+    <section class="section section--dark" id="stack" aria-label="My Stack">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">02</span>
@@ -206,11 +232,11 @@
               <h4>Languages</h4>
             </div>
             <div class="tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
-              <span class="tag">Ruby</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="tag-logo" loading="lazy" alt="">JavaScript</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/typescript/3178C6" class="tag-logo" loading="lazy" alt="">TypeScript</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/html5/E34F26" class="tag-logo" loading="lazy" alt="">HTML5</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/css/1572B6" class="tag-logo" loading="lazy" alt="">CSS3</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/ruby/CC342D" class="tag-logo" loading="lazy" alt="">Ruby</span>
             </div>
           </div>
 
@@ -220,13 +246,13 @@
               <h4>Frameworks &amp; Libraries</h4>
             </div>
             <div class="tags">
-              <span class="tag">React</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">React Native</span>
-              <span class="tag">Expo</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">Material-UI</span>
-              <span class="tag">Express</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/react/61DAFB" class="tag-logo" loading="lazy" alt="">React</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/nextdotjs/ffffff" class="tag-logo" loading="lazy" alt="">Next.js</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/react/61DAFB" class="tag-logo" loading="lazy" alt="">React Native</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/expo/ffffff" class="tag-logo" loading="lazy" alt="">Expo</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" class="tag-logo" loading="lazy" alt="">Tailwind CSS</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/mui/007FFF" class="tag-logo" loading="lazy" alt="">Material-UI</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/express/ffffff" class="tag-logo" loading="lazy" alt="">Express</span>
             </div>
           </div>
 
@@ -236,13 +262,13 @@
               <h4>Tools &amp; Platforms</h4>
             </div>
             <div class="tags">
-              <span class="tag">Git &amp; GitHub</span>
-              <span class="tag">Firebase</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Figma</span>
-              <span class="tag">Jest</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/git/F05032" class="tag-logo" loading="lazy" alt="">Git &amp; GitHub</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/firebase/FFCA28" class="tag-logo" loading="lazy" alt="">Firebase</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/supabase/3ECF8E" class="tag-logo" loading="lazy" alt="">Supabase</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/postgresql/4169E1" class="tag-logo" loading="lazy" alt="">PostgreSQL</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/mysql/4479A1" class="tag-logo" loading="lazy" alt="">MySQL</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/figma/F24E1E" class="tag-logo" loading="lazy" alt="">Figma</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/jest/C21325" class="tag-logo" loading="lazy" alt="">Jest</span>
             </div>
           </div>
 
@@ -264,7 +290,7 @@
     </section>
 
     <!-- ========== EXPERIENCE ========== -->
-    <section class="section" id="experience">
+    <section class="section" id="experience" aria-label="Experience">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">03</span>
@@ -278,10 +304,10 @@
           <div class="tl-item reveal">
             <div class="tl-dot"></div>
             <div class="tl-card">
-              <span class="tl-period">July 2025 — Present</span>
+              <span class="tl-period">July 2025 - Present</span>
               <h3 class="tl-role">Software Developer</h3>
               <a
-                href="https://andrometa.io"
+                href="https://andrometa.gg"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="tl-company"
@@ -307,7 +333,7 @@
           <div class="tl-item reveal">
             <div class="tl-dot"></div>
             <div class="tl-card">
-              <span class="tl-period">May 2024 — June 2025</span>
+              <span class="tl-period">May 2024 - June 2025</span>
               <h3 class="tl-role">Frontend Software Developer</h3>
               <a
                 href="https://spaarkd.com"
@@ -335,7 +361,7 @@
           <div class="tl-item reveal">
             <div class="tl-dot"></div>
             <div class="tl-card">
-              <span class="tl-period">Mar 2022 — Mar 2024</span>
+              <span class="tl-period">Mar 2022 - Mar 2024</span>
               <h3 class="tl-role">Frontend Software Developer</h3>
               <a
                 href="https://www.amy.app/"
@@ -363,15 +389,9 @@
           <div class="tl-item reveal">
             <div class="tl-dot"></div>
             <div class="tl-card">
-              <span class="tl-period">Feb 2022 — June 2024</span>
+              <span class="tl-period">Feb 2022 - June 2024</span>
               <h3 class="tl-role">Web Development Mentor</h3>
-              <a
-                href="https://lighthouselabs.ca"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="tl-company"
-                >LIGHTHOUSE LABS ↗</a
-              >
+              <span class="tl-company">LIGHTHOUSE LABS</span>
               <p class="tl-desc">
                 Mentored 200+ students in modern web development technologies
                 and best practices. Provided technical guidance and code
@@ -389,7 +409,7 @@
           <div class="tl-item reveal">
             <div class="tl-dot"></div>
             <div class="tl-card">
-              <span class="tl-period">Sep 2021 — Mar 2022</span>
+              <span class="tl-period">Sep 2021 - Mar 2022</span>
               <h3 class="tl-role">Technical Support Engineer</h3>
               <a
                 href="https://microverse.org"
@@ -416,7 +436,7 @@
     </section>
 
     <!-- ========== PROJECTS ========== -->
-    <section class="section section--dark" id="projects">
+    <section class="section section--dark" id="projects" aria-label="Projects">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">04</span>
@@ -431,26 +451,58 @@
             <div class="project-top">
               <i class="fas fa-folder-open project-folder"></i>
               <a
-                href="https://github.com/mnnt-io/YapChat"
+                href="https://yapworld.net/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub"
+                aria-label="Live site"
                 class="project-gh"
-                ><i class="fab fa-github"></i
+                ><i class="fas fa-external-link-alt"></i
               ></a>
             </div>
-            <h3 class="project-name">YapChat</h3>
+            <h3 class="project-name">YapWorld</h3>
             <p class="project-desc">
-              An AI-powered social bonding app built with Expo &amp; React
-              Native. Features AI persona chat, Discord integration, real-time
-              messaging, and full user identity customisation with personality
-              profiles.
+              An autonomous wellness ecosystem delivered as both a web platform
+              (Next.js) and mobile app (Expo &amp; React Native). Uses an
+              agentic AI to proactively manage health, career navigation, and
+              daily routines — shifting users from reactive tracking to
+              proactive care.
             </p>
             <div class="tags project-tags">
-              <span class="tag">React Native</span>
-              <span class="tag">Expo</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Firebase</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/react/61DAFB" class="tag-logo" loading="lazy" alt="">React Native</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/nextdotjs/ffffff" class="tag-logo" loading="lazy" alt="">Next.js</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/expo/ffffff" class="tag-logo" loading="lazy" alt="">Expo</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/typescript/3178C6" class="tag-logo" loading="lazy" alt="">TypeScript</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/firebase/FFCA28" class="tag-logo" loading="lazy" alt="">Firebase</span>
+              <span class="tag tag--muted">Work</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <i class="fas fa-folder-open project-folder"></i>
+              <a
+                href="https://amy.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Live site"
+                class="project-gh"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3 class="project-name">AMY</h3>
+            <p class="project-desc">
+              An AI-powered maths tutoring platform built with React and
+              Material-UI. Amy understands exactly why a student makes a
+              mistake and automatically fills the knowledge gap in real time,
+              drawing from unique questions for fully
+              personalised, adaptive learning.
+            </p>
+            <div class="tags project-tags">
+              <span class="tag"><img src="https://cdn.simpleicons.org/react/61DAFB" class="tag-logo" loading="lazy" alt="">React</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/mui/007FFF" class="tag-logo" loading="lazy" alt="">Material-UI</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="tag-logo" loading="lazy" alt="">JavaScript</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/jest/C21325" class="tag-logo" loading="lazy" alt="">Jest</span>
+              <span class="tag tag--muted">Work</span>
             </div>
           </article>
 
@@ -473,10 +525,39 @@
               hydration monitoring, risk calculation, and educational resources.
             </p>
             <div class="tags project-tags">
-              <span class="tag">React Native</span>
-              <span class="tag">Expo</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Firebase</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/react/61DAFB" class="tag-logo" loading="lazy" alt="">React Native</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/expo/ffffff" class="tag-logo" loading="lazy" alt="">Expo</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/typescript/3178C6" class="tag-logo" loading="lazy" alt="">TypeScript</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/firebase/FFCA28" class="tag-logo" loading="lazy" alt="">Firebase</span>
+              <span class="tag tag--muted">Personal</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <i class="fas fa-folder-open project-folder"></i>
+              <a
+                href="https://github.com/ZeenatLawal/my-city-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="project-gh"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <h3 class="project-name">My City App</h3>
+            <p class="project-desc">
+              A React Native app that centralises city services for citizens,
+              businesses, and healthcare. Features role-based access for admins,
+              mayors, and citizens, plus organisation management, appointment
+              booking, and announcements.
+            </p>
+            <div class="tags project-tags">
+              <span class="tag"><img src="https://cdn.simpleicons.org/react/61DAFB" class="tag-logo" loading="lazy" alt="">React Native</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/firebase/FFCA28" class="tag-logo" loading="lazy" alt="">Firebase</span>
+              <span class="tag"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="tag-logo" loading="lazy" alt="">JavaScript</span>
+              <span class="tag"><i class="fa-solid fa-layer-group tag-fa-icon" aria-hidden="true"></i>Context API</span>
+              <span class="tag tag--muted">Personal</span>
             </div>
           </article>
         </div>
@@ -484,7 +565,7 @@
     </section>
 
     <!-- ========== EDUCATION ========== -->
-    <section class="section" id="education">
+    <section class="section" id="education" aria-label="Education">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">05</span>
@@ -540,7 +621,7 @@
     </section>
 
     <!-- ========== CONTACT ========== -->
-    <section class="section section--dark" id="contact">
+    <section class="section section--dark" id="contact" aria-label="Contact">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">06</span>
@@ -555,7 +636,7 @@
             <h3 class="contact-heading">Let's work<br /><em>together.</em></h3>
             <p>
               Whether you have a project in mind, a job opportunity, or just
-              want to say hi — my inbox is always open.
+              want to say hi, my inbox is always open.
             </p>
             <div class="contact-socials">
               <a
@@ -583,10 +664,11 @@
           </div>
 
           <form
-            action="https://formspree.io/f/mayabzdz"
-            method="post"
+            id="contactForm"
             class="contact-form reveal"
           >
+            <input type="hidden" name="access_key" value="49bda388-c223-4b9d-9dd7-5c940eb7d2e1" />
+            <input type="hidden" name="subject" value="New message from Portfolio" />
             <div class="form-field">
               <label for="fname">Name</label>
               <input
@@ -617,9 +699,10 @@
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">
-              Send Message &nbsp;<i class="fas fa-paper-plane"></i>
+            <button type="submit" class="btn btn-primary" id="contactSubmit">
+              Send Message &nbsp;<i class="fas fa-paper-plane" aria-hidden="true"></i>
             </button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
           </form>
         </div>
       </div>
@@ -628,7 +711,7 @@
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
       <div class="container footer-inner">
-        <p class="footer-copy">© 2026 Zeenat Lawal. Built with care.</p>
+        <p class="footer-copy">© 2026 Zeenat Lawal</p>
         <div class="footer-socials">
           <a
             href="https://github.com/ZeenatLawal"

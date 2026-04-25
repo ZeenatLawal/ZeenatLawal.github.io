@@ -1,7 +1,3 @@
-/* =========================================
-   PORTFOLIO SCRIPTS — ZEENAT LAWAL
-   ========================================= */
-
 // ---------- CUSTOM CURSOR ----------
 const cursorDot = document.getElementById("cursorDot");
 if (cursorDot) {
@@ -82,12 +78,20 @@ sections.forEach((sec) => sectionObserver.observe(sec));
 // ---------- TYPED EFFECT (hero role line) ----------
 const roleEl = document.querySelector(".hero-role");
 if (roleEl) {
-  const original = roleEl.textContent;
-  const words = ["React", "Next.js", "TypeScript", "React Native"];
+  const words = [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "React Native",
+    "Node.js",
+    "Responsive Design",
+    "Accessibility",
+    "Performance Optimization",
+  ];
   let wIdx = 0;
   let charIdx = 0;
   let deleting = false;
-  const prefix = "Software Developer — ";
+  const prefix = "Software Developer | ";
 
   function type() {
     const word = words[wIdx];
@@ -114,9 +118,55 @@ if (roleEl) {
   setTimeout(type, 1200);
 }
 
+// ---------- TAG LOGO ALT TEXT ----------
+document.querySelectorAll(".tag-logo").forEach((img) => {
+  const label = img.parentElement.textContent.trim();
+  if (label) img.setAttribute("alt", label + " logo");
+});
+
 // ---------- STAGGER REVEAL FOR CARDS ----------
 document.querySelectorAll(".stack-grid, .projects-grid").forEach((grid) => {
   Array.from(grid.children).forEach((child, i) => {
     child.style.transitionDelay = `${i * 0.1}s`;
   });
 });
+
+// ---------- CONTACT FORM (Web3Forms) ----------
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  const submitBtn = document.getElementById("contactSubmit");
+  const status = document.getElementById("formStatus");
+
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(contactForm);
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+    status.textContent = "";
+    status.className = "form-status";
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (res.ok) {
+        status.textContent = "Message sent! I'll get back to you soon.";
+        status.className = "form-status form-status--success";
+        contactForm.reset();
+      } else {
+        status.textContent = "Error: " + data.message;
+        status.className = "form-status form-status--error";
+      }
+    } catch {
+      status.textContent = "Something went wrong. Please try again.";
+      status.className = "form-status form-status--error";
+    } finally {
+      submitBtn.innerHTML =
+        'Send Message &nbsp;<i class="fas fa-paper-plane" aria-hidden="true"></i>';
+      submitBtn.disabled = false;
+      status.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  });
+}
