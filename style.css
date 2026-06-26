@@ -48,7 +48,10 @@ body {
   color: var(--white);
   font-family: var(--ff-sans);
   overflow-x: hidden;
-  cursor: none; /* hide default when custom cursor active */
+}
+
+body.custom-cursor {
+  cursor: none; /* hide default only when custom cursor is running */
 }
 
 a {

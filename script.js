@@ -1,14 +1,18 @@
 // ---------- CUSTOM CURSOR ----------
 const cursorDot = document.getElementById("cursorDot");
 if (cursorDot) {
-  document.addEventListener("mousemove", (e) => {
-    cursorDot.style.left = e.clientX + "px";
-    cursorDot.style.top = e.clientY + "px";
-  });
-  // hide on mobile
-  if ("ontouchstart" in window) {
+  const isTouchDevice =
+    "ontouchstart" in window ||
+    window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
+  if (isTouchDevice) {
     cursorDot.style.display = "none";
-    document.body.style.cursor = "auto";
+  } else {
+    document.body.classList.add("custom-cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursorDot.style.left = e.clientX + "px";
+      cursorDot.style.top = e.clientY + "px";
+    });
   }
 }
 
