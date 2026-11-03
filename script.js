@@ -95,7 +95,7 @@ if (roleEl) {
   let wIdx = 0;
   let charIdx = 0;
   let deleting = false;
-  const prefix = "Software Developer | ";
+  const prefix = "Software Engineer | ";
 
   function type() {
     const word = words[wIdx];
